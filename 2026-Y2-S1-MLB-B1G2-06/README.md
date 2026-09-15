@@ -10,7 +10,7 @@ Predict whether a market index will move **Up (1)** or **Down/Not Up (0)** on it
 
 | Member | Name | IT number | Technique |
 |---|---|---|---|
-| 1 | `[Jayasundara J.M.Y.V.]` | IT25102978 | Missing-data handling and validation |
+| 1 | Jayasundara J.M.Y.V. | IT25102978 | Missing-data handling and validation |
 | 2 | `[ADD NAME]` | `[ADD IT NUMBER]` | Categorical encoding |
 | 3 | `[ADD NAME]` | `[ADD IT NUMBER]` | Outlier handling |
 | 4 | `[ADD NAME]` | `[ADD IT NUMBER]` | Feature scaling |
