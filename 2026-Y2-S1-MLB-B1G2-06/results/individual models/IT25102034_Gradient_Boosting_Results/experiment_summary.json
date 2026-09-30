@@ -1,0 +1,49 @@
+{
+  "student_id": "IT25102034",
+  "algorithm": "Gradient Boosting Classifier",
+  "problem_type": "Binary classification",
+  "target_definition": "1 if next closing price is higher; otherwise 0",
+  "features": [
+    "Volume_Available",
+    "Day",
+    "Index_399001.SZ",
+    "Index_IXIC",
+    "Index_TWII"
+  ],
+  "training_rows": 77150,
+  "validation_rows": 16534,
+  "testing_rows": 16539,
+  "best_parameters": {
+    "learning_rate": 0.05,
+    "max_depth": 1,
+    "n_estimators": 50
+  },
+  "best_cross_validation_f1": 0.6903751485316585,
+  "baseline_validation_metrics": {
+    "Accuracy": 0.5271561630579412,
+    "Precision": 0.5350210970464135,
+    "Recall": 0.8631722260040844,
+    "F1_Score": 0.6605886949726492,
+    "ROC_AUC": 0.5119696232207123
+  },
+  "tuned_validation_metrics": {
+    "Accuracy": 0.533083343413572,
+    "Precision": 0.533083343413572,
+    "Recall": 1.0,
+    "F1_Score": 0.6954394824049235,
+    "ROC_AUC": 0.5059252325845247
+  },
+  "final_test_metrics": {
+    "Accuracy": 0.545619444948304,
+    "Precision": 0.545619444948304,
+    "Recall": 1.0,
+    "F1_Score": 0.7060204201384814,
+    "ROC_AUC": 0.5042182257824775
+  },
+  "limitations": [
+    "Boosting is less interpretable than a single Decision Tree.",
+    "Sequential training can be slower than parallel ensemble methods.",
+    "Historical patterns do not guarantee future performance.",
+    "Selected features omit news and macroeconomic variables."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "student_id": "IT25102165",
+  "algorithm": "Linear Support Vector Machine",
+  "problem_type": "Binary classification",
+  "target_definition": "1 if next closing price is higher; otherwise 0",
+  "features": [
+    "Volume_Available",
+    "Day",
+    "Index_399001.SZ",
+    "Index_IXIC",
+    "Index_TWII"
+  ],
+  "training_rows": 77150,
+  "validation_rows": 16534,
+  "testing_rows": 16539,
+  "best_parameters": {
+    "C": 0.001,
+    "class_weight": null,
+    "loss": "hinge"
+  },
+  "best_cross_validation_f1": 0.6903751485316585,
+  "baseline_validation_metrics": {
+    "Accuracy": 0.5319341962017661,
+    "Precision": 0.5329653480527445,
+    "Recall": 0.9859314726571363,
+    "F1_Score": 0.6919065249412795,
+    "ROC_AUC": 0.5127123255983475
+  },
+  "tuned_validation_metrics": {
+    "Accuracy": 0.533083343413572,
+    "Precision": 0.533083343413572,
+    "Recall": 1.0,
+    "F1_Score": 0.6954394824049235,
+    "ROC_AUC": 0.485456229256094
+  },
+  "final_test_metrics": {
+    "Accuracy": 0.545619444948304,
+    "Precision": 0.545619444948304,
+    "Recall": 1.0,
+    "F1_Score": 0.7060204201384814,
+    "ROC_AUC": 0.49067141278907905
+  },
+  "limitations": [
+    "A linear boundary may not represent complex market relationships.",
+    "Historical patterns do not guarantee future performance.",
+    "The selected features contain limited short-term market information.",
+    "News, transaction costs and macroeconomic variables are excluded."
+  ]
+}

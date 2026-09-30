@@ -1,0 +1,4 @@
+Dataset,Down_or_Not_Up_0,Up_1,Up_Percentage
+Training,36480,40670,52.72
+Validation,7720,8814,53.31
+Testing,7515,9024,54.56

@@ -1,0 +1,49 @@
+{
+  "student_id": "IT25101173",
+  "algorithm": "K-Nearest Neighbors",
+  "problem_type": "Binary classification",
+  "target_definition": "1 if next closing price is higher; otherwise 0",
+  "features": [
+    "Volume_Available",
+    "Day",
+    "Index_399001.SZ",
+    "Index_IXIC",
+    "Index_TWII"
+  ],
+  "training_rows": 77150,
+  "validation_rows": 16534,
+  "testing_rows": 16539,
+  "best_parameters": {
+    "n_neighbors": 31,
+    "p": 1,
+    "weights": "distance"
+  },
+  "best_cross_validation_f1": 0.5843150591498161,
+  "baseline_validation_metrics": {
+    "Accuracy": 0.5060481432200314,
+    "Precision": 0.5441879524655102,
+    "Recall": 0.45200816882232814,
+    "F1_Score": 0.4938332816857763,
+    "ROC_AUC": 0.5082073267799344
+  },
+  "tuned_validation_metrics": {
+    "Accuracy": 0.5169952824482884,
+    "Precision": 0.5400232018561485,
+    "Recall": 0.6337644656228727,
+    "F1_Score": 0.5831506420294394,
+    "ROC_AUC": 0.5078037501572511
+  },
+  "final_test_metrics": {
+    "Accuracy": 0.5070439567083862,
+    "Precision": 0.5477993634068709,
+    "Recall": 0.5530806737588653,
+    "F1_Score": 0.5504273504273505,
+    "ROC_AUC": 0.5085751148412395
+  },
+  "limitations": [
+    "KNN prediction becomes slower as the training dataset grows.",
+    "Performance is sensitive to feature scaling and the selected k value.",
+    "Historical patterns do not guarantee future performance.",
+    "Selected features omit news and macroeconomic variables."
+  ]
+}

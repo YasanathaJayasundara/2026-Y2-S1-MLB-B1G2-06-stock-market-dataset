@@ -1,0 +1,52 @@
+{
+  "student_id": "IT25200808",
+  "algorithm": "Decision Tree Classifier",
+  "problem_type": "Binary classification",
+  "target_definition": "1 if next closing price is higher; otherwise 0",
+  "features": [
+    "Volume_Available",
+    "Day",
+    "Index_399001.SZ",
+    "Index_IXIC",
+    "Index_TWII"
+  ],
+  "training_rows": 77150,
+  "validation_rows": 16534,
+  "testing_rows": 16539,
+  "best_parameters": {
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 3,
+    "min_samples_leaf": 1
+  },
+  "best_cross_validation_f1": 0.6903751485316585,
+  "final_tree_depth": 3,
+  "final_tree_leaves": 8,
+  "baseline_validation_metrics": {
+    "Accuracy": 0.5265513487359381,
+    "Precision": 0.5374165148755312,
+    "Recall": 0.803380984796914,
+    "F1_Score": 0.6440200090950432,
+    "ROC_AUC": 0.5126096789022645
+  },
+  "tuned_validation_metrics": {
+    "Accuracy": 0.533083343413572,
+    "Precision": 0.533083343413572,
+    "Recall": 1.0,
+    "F1_Score": 0.6954394824049235,
+    "ROC_AUC": 0.5070441102297216
+  },
+  "final_test_metrics": {
+    "Accuracy": 0.545619444948304,
+    "Precision": 0.545619444948304,
+    "Recall": 1.0,
+    "F1_Score": 0.7060204201384814,
+    "ROC_AUC": 0.506863607300765
+  },
+  "limitations": [
+    "Decision Trees can overfit without depth and leaf controls.",
+    "Historical patterns do not guarantee future performance.",
+    "Selected features contain limited short-term market information.",
+    "News, transaction costs and macroeconomic variables are excluded."
+  ]
+}
