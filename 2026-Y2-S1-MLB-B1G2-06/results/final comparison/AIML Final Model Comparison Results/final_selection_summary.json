@@ -1,0 +1,20 @@
+{
+  "problem": "Predict next closing-price direction",
+  "target": {
+    "0": "down or unchanged",
+    "1": "up"
+  },
+  "models_compared": [
+    "KNN",
+    "Random Forest",
+    "Decision Tree",
+    "Gradient Boosting",
+    "Logistic Regression",
+    "SVM"
+  ],
+  "majority_class_accuracy_baseline": 0.545619444948304,
+  "primary_selected_model": "KNN",
+  "secondary_comparison_model": "Decision Tree",
+  "selection_reason": "KNN was the only model to predict both classes in substantial quantities and had the highest test ROC-AUC and balanced accuracy. Decision Tree was retained as an interpretable secondary comparison but collapsed to Class 1 on the test set.",
+  "overall_finding": "All models showed weak discrimination; ROC-AUC values were close to 0.50."
+}
