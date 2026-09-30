@@ -1,0 +1,12 @@
+FINAL MODEL-COMPARISON SUMMARY
+
+Problem: Predict next closing-price direction (0 = down/not up, 1 = up)
+Models compared: Logistic Regression, SVM, Decision Tree, KNN, Random Forest, Gradient Boosting
+Majority-class accuracy baseline: 0.5456
+Primary selected model: KNN
+Secondary comparison model: Decision Tree
+
+Finding:
+KNN was the only model that predicted both classes in substantial quantities and achieved
+the highest test ROC-AUC and balanced accuracy. Overall predictive discrimination remained
+weak because every model's ROC-AUC was close to 0.50.
