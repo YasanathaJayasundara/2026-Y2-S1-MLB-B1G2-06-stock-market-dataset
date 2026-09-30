@@ -1,7 +1,0 @@
-Model,Student_ID,Algorithm,Best_Parameters,Best_CV_F1_from_Tuning
-Logistic Regression,IT25102978,Logistic Regression,"{""C"": 0.01, ""class_weight"": null, ""penalty"": ""l1"", ""solver"": ""liblinear""}",0.6903751485316585
-SVM,IT25102165,Linear Support Vector Machine,"{""C"": 0.001, ""class_weight"": null, ""loss"": ""hinge""}",0.6903751485316585
-Decision Tree,IT25200808,Decision Tree Classifier,"{""class_weight"": null, ""criterion"": ""gini"", ""max_depth"": 3, ""min_samples_leaf"": 1}",0.6903751485316585
-KNN,IT25101173,K-Nearest Neighbors,"{""n_neighbors"": 31, ""p"": 1, ""weights"": ""distance""}",0.5843150591498161
-Random Forest,IT25200151,Random Forest Classifier,"{""max_depth"": 5, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 200}",0.6838761386217579
-Gradient Boosting,IT25102034,Gradient Boosting Classifier,"{""learning_rate"": 0.05, ""max_depth"": 1, ""n_estimators"": 50}",0.6903751485316585
